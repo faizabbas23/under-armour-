@@ -1,0 +1,13 @@
+import requests
+from bs4 import BeautifulSoup
+x = int("what is the url")
+r = requests.get(x)
+
+
+soup = BeautifulSoup(r.text, 'html.parser')
+
+item = {
+    'product_name': soup.find('h1', {"class" : "b-product_name-wording"}).text.strip(),
+    'price': soup.find('span', {'class': 'b-price-value bfx-price'}).text.strip(),
+}
+print(item)
