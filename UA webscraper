@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-x = int("what is the url")
+x = input("what is the url")
 r = requests.get(x)
 
 
