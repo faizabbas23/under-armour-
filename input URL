@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 
 
-x = int("what is the url")
+x = input("what is the url")
 r = requests.get('https://www.underarmour.com/en-us/p/running/mens-ua-hovr-machina-running-shoes/3021939.html?start=0&breadCrumbLast=Shoes')
 
 
